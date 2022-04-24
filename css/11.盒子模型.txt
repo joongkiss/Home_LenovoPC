@@ -62,3 +62,29 @@ padding：1px 2px 3px 5px                上1px，右2px，下3px，左5px，顺
 解决方案:如果保证盒子跟效果图大小保持一致,则让width/height减去多出来的内边距大小即可。（与边框解决方式一致）
 
 ★外边距(margin)
+margin属性用于设置外边距,即控制盒子和盒子之间的距离。
+
+属性                            作用
+margin-left                 左外边距
+margin-right                右内边距
+margin-top                  上内边距
+margin-bottom               下内边距
+
+margin简写方式代表的意义跟padding完全一致。
+
+外边距可以让块级盒子水平居中,但是必须满足两个条件:
+①盒子必须指定了宽度(width)。
+②盒子左右的外边距都设置为auto。
+
+块级盒子水平居中语法：
+.header {width: 960px; 
+         margin:0 auto;}
+
+常见的写法,以下三种都可以:
+·margin-left: auto; margin-right auto;
+·margin: auto;
+·margin: O auto; 
+
+注意:以上方法是让块级元素水平居中,行内元素或者行内块元素水平居中给其父元素添加text-align:center即可。 
+
+★外边距合并
