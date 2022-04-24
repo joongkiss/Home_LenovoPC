@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 链接伪类选择器 */
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: steelblue
+        }
+        
+        a:visited {
+            color: black;
+        }
+        /* :focus 选择器，针对与表单样式进行修改 */
+        
+        input:focus {
+            background-color: rgb(193, 197, 201);
+            color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.baidu.com" target="_blank">我是一个不知名的网站无法跳转</a><br>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

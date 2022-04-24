@@ -1,0 +1,5 @@
+Chinese (Simplified) Language Pack for VS Code：中文语言包
+Open in Browser：右键在浏览器中打开
+JS-CSS-HTML Formatter：每次保存,都会自动格式化js css和html代码
+Auto Rename Tag：自动重命名配对的HTML/XML标签
+CSS Peek：追踪至样式 

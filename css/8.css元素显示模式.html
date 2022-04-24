@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式之块元素和行内元素</title>
+    <style>
+        /* 块元素 */
+        
+        div {
+            width: 200px;
+            height: 300px;
+            background-color: pink;
+            text-align: center;
+        }
+        /* 行内元素 设置高度宽度是无效的*/
+        /* span {
+            width: 200px;
+            height: 300px;
+        } */
+        /* 行内块元素 */
+        
+        input {
+            width: 300px;
+            height: 29px;
+        }
+        /* 块元素和行内元素之间的相互转换 */
+        
+        .jx {
+            width: 300px;
+            height: 23px;
+            background-color: blueviolet;
+            /* 行内元素转换成块级元素 */
+            display: block;
+        }
+        
+        .kj {
+            width: 300px;
+            height: 25px;
+            background-color: bisque;
+            /* 块级元素转换成行内元素 */
+            display: inline;
+        }
+        
+        .hn {
+            width: 200px;
+            height: 29px;
+            background-color: thistle;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 块元素 -->
+    <div>比较霸道，自己独占一行</div>
+    <!-- 行内元素 -->
+    <span>我是pink老师</span><strong>我喜欢粉红色</strong>
+    <a href="http://www.xxxx.com">百度一下你就知道</a>
+    <!-- 行内块元素 -->
+    <input type="text">
+    <input type="text">
+    <!-- 块元素和行内元素之间的相互转换 -->
+    <a href="#" class="jx">金星阿姨</a>
+    <a href="#" class="jx">金星阿姨</a>
+    <div class="kj">我是块级元素</div>
+    <div class="kj">我是块级元素</div>
+    <!-- 行内元素转换为行内块元素 -->
+    <span class="hn">我是行内元素</span>
+    <span class="hn">我是行内元素</span>
+</body>
+
+</html>

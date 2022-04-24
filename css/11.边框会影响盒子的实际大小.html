@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边框会影响盒子的实际大小</title>
+    <style>
+        /* 我们需要一个200px*200px有边框的盒子 */
+        /* 盒子的宽度为200px，边框的宽度为1px，左右就是2px，所以想要200px带边框的盒子就需要盒子本身的宽度减2 */
+        
+        div {
+            width: 198px;
+            height: 198px;
+            background-color: pink;
+            border: 1px black dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+<label>标签为input元素定义标注（标签）
+<label>标签用于绑定一个表单元素，当点击<label>标签内的文本时，浏览器会自动把焦点
+转到或者选中对应的表单元素上，用来增加用户体验，需要与<input>标签搭配使用
+语法：（<label>标签中for属性的值需=<input>标签中id属性的值）
+<input type="radio" name="xb" id="sex">
+<label for="sex">男</label>

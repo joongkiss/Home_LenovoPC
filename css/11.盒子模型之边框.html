@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        .oh {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            text-align: center;
+            line-height: 100px;
+            font-size: 3px;
+            border-width: 2px;
+            /* border-style: solid; */
+            border-style: dashed;
+            /* solid 实线边框，dashed 虚线边框，dotted 点线边框*/
+            /* border-style: dotted; */
+            border-color: teal;
+        }
+        
+        .hz {
+            /*请给一个 200*200 的盒子,设置上边框为红色,其余边框为蓝色*/
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-size: 4px;
+            border: rgb(40, 96, 228) 4px dashed;
+            /* 四个边框可以单独的指定颜色和样式 */
+            border-top: 4px dashed red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="oh">
+        我是第一个盒子
+    </div>
+    <div class="hz">我是不同边框不同颜色的盒子</div>
+</body>
+
+</html>
