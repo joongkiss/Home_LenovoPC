@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            /* border: 1px solid transparent;给父级添加透明边框 */
+            /* padding-top: 1px;给父级加上内边距 */
+            overflow: hidden;
+            /* 添加overflow参数 */
+        }
+        
+        .s {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            /* 嵌套的第二个盒子想往下移100px，结果父级盒子会一个跟着往下移 */
+            margin-top: 100px;
+            /* 解决方法：1.给父级定义边框 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="f">
+        <div class="s"></div>
+    </div>
+</body>
+
+</html>

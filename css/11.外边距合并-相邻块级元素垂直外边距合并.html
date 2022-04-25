@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .damao,
+        .ermao {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* 第一个盒子的下边距100px，第二个盒子的上边距300px，
+        他们两个盒子的间距不会相加，只会取其中最大的一个盒子的边距，
+        所以在实际开发中只设置一个盒子的间距来避免这个问题 */
+        
+        .damao {
+            margin-bottom: 100px;
+        }
+        
+        .ermao {
+            margin-top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="damao">大毛</div>
+    <div class="ermao">二毛</div>
+</body>
+
+</html>

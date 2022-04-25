@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 内边距和外边距都设置为0，来清除内外边距 */
+            padding: 0;
+            margin: 0;
+        }
+        /* 行内元素只设置左右内边距就好，上下设置后无效，需要转换为行内块元素才能设置上下内边距 */
+        
+        span {
+            padding: 0 10px 0 10px;
+            margin: 0 10px 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    123
+    <ul>
+        <li>haha</li>
+    </ul>
+    <span>我是行内元素</span>
+</body>
+
+</html>
