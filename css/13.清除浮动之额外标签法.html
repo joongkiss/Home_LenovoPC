@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <style>
+        .box {
+            width: 800px;
+            /* height: 1000px; */
+            background-color: pink;
+            border: 1px solid black;
+        }
+        
+        .dm,
+        .em {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        
+        .bottom {
+            /* 在底部加上一个标准流盒子后，因为上个盒子没有高度且子元素设置了浮动，会导致盒子往上移，浮动盒子会压住挤上来的盒子 */
+            width: 800px;
+            height: 60px;
+            background-color: skyblue;
+        }
+        
+        .cl {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="dm">大毛</div>
+        <div class="em">二毛</div>
+        <!-- 使用表标签法在浮动的最后一个盒子加一个盒子，css写clear属性进行解决 -->
+        <div class="cl"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+
+</html>

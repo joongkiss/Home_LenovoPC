@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动元素具有行内块元素的特点</title>
+    <style>
+        .s1,
+        .s2 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 如果行内元素有了浮动，则不需要转换块级、行内块元素就可以直接给高度和宽度 */
+            float: left;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        .d1 {
+            width: 205px;
+            height: 100px;
+            float: left;
+            background-color: aquamarine;
+        }
+        
+        p {
+            /* 没有设置宽度时，默认的宽度=父级元素的宽度 */
+            height: 400px;
+            background-color: tomato;
+            /* 设置为浮动元素后，就具有了行内块元素的特性（宽度就是内容本身的宽度） */
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="s1">1</span>
+    <span class="s2">2</span>
+    <div class="d1">3</div>
+    <p>p</p>
+</body>
+
+</html>

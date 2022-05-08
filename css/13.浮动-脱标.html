@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动特性-脱标</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            font-size: 10px;
+            /* 脱离标准普通流的控制(浮)移动到指定位置(动),可以把页面想象成立体，设置float的盒子漂浮在了空中 */
+            /* 之前的盒子的位置不在保留，会被标准流盒子所占据 */
+            float: left;
+            border-radius: 5px;
+        }
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            font-size: 10px;
+            background-color: skyblue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">我是浮动的盒子</div>
+    <div class="box2">我是标准流盒子</div>
+</body>
+
+</html>

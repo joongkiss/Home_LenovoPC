@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框、盒子阴影</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .boxx {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 加圆角边框 */
+            border-radius: 10px;
+            /* 设置阴影 */
+            box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, .3);
+            /* 让div盒子居中 */
+            margin: 100px auto;
+        }
+        
+        span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 10px 20px 30px 40px;
+            margin: 25px;
+        }
+        
+        .box {
+            width: 200px;
+            height: 400px;
+            background-color: steelblue;
+            border-radius: 5px;
+            margin-left: 80px;
+        }
+        
+        .box:hover {
+            /* 鼠标经过呈现阴影 */
+            box-shadow: 0 0 50px 20px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxx"><span></span></div>
+    <div class="box"></div>
+</body>
+
+</html>
